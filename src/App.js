@@ -5,13 +5,14 @@ import {
   BellIcon,
   MenuIcon,
   ViewBoardsIcon,
+  MenuAlt2Icon,
 } from "@heroicons/react/outline";
 import "./App.css";
 
 function App() {
   return (
     <div className="h-screen flex">
-      <div className="w-64 px-8 py-4 bg-gray-100 border-r overflow-auto">
+      <div className="hidden lg:block w-64 px-8 py-4 bg-gray-100 border-r overflow-auto">
         <img className="h-9 w-9" src="img\E.svg" alt="Euclid Logo" />
         <nav className="mt-8">
           <h3 className="px-3 text-xs font-semibold text-gray-600 uppercase tracking-wide">
@@ -110,8 +111,11 @@ function App() {
         <div className="flex-shrink-0 border-b-2 border-gray-200">
           <header className="px-6">
             <div className="flex justify-between items-center py-3 border-b border-gray-200">
-              <div className="flex-1">
-                <div className="relative w-64">
+              <div className="flex-1 flex">
+                <button className="text-gray-600 lg:hidden">
+                  <MenuAlt2Icon className="text-gray-600 h-6 w-6" />
+                </button>
+                <div className="ml-3 relative w-64 lg:ml-0">
                   <span className="absolute inset-y-0 left-0 pl-3 flex items-center">
                     <SearchIcon className="h-6 w-6 text-gray-600" />
                   </span>
@@ -189,634 +193,650 @@ function App() {
           </header>
         </div>
         <div className="flex-1 overflow-auto">
-          <main className="p-3 inline-flex">
-            <div className="ml-3 flex-shrink-0 p-3 w-80 bg-gray-100 rounded-md">
-              <h3 className="text-sm font-medium text-gray-900">Backlog</h3>
-              <ul className="mt-2">
-                <li>
-                  <a href="#" className="block p-5 bg-white rounded-md shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="rounded-full h-6 w-6"
-                          src="img\JS.JPG"
-                          alt="JS"
-                        />
-                      </span>
-                    </div>
-                    <div className="flex justify-between items-baseline mt-2">
-                      <div className="text-sm text-gray-600">
-                        <time datetime="2019-09-14">Sep 14</time>    </div>
-                    <div>
-                      <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
-                        <svg
-                          className="h-2 w-2 text-green-500"
-                          viewBox="0 0 8 8"
-                          fill="currentColor"
-                          >
-                          <circle cx="4" cy="4" r="3" />
-                        </svg>
-                        <span className="ml-2 text-green-900 text-sm font-medium">Feature Request</span>
-                      </span>
-                          </div>
-                    </div>
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a href="#" className="block p-5 bg-white rounded-md shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="rounded-full h-6 w-6"
-                          src="img\JS.JPG"
-                          alt="JS"
-                        />
-                      </span>
-                    </div>
-                    <div className="flex justify-between items-baseline mt-2">
-                      <div className="text-sm text-gray-600">
-                        <time datetime="2019-09-14">Sep 14</time>    </div>
-                    <div>
-                      <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
-                        <svg
-                          className="h-2 w-2 text-green-500"
-                          viewBox="0 0 8 8"
-                          fill="currentColor"
-                          >
-                          <circle cx="4" cy="4" r="3" />
-                        </svg>
-                        <span className="ml-2 text-green-900 text-sm font-medium">Feature Request</span>
-                      </span>
-                          </div>
-                    </div>
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a href="#" className="block p-5 bg-white rounded-md shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="rounded-full h-6 w-6"
-                          src="img\JS.JPG"
-                          alt="JS"
-                        />
-                      </span>
-                    </div>
-                    <div className="flex justify-between items-baseline mt-2">
-                      <div className="text-sm text-gray-600">
-                        <time datetime="2019-09-14">Sep 14</time>    </div>
-                    <div>
-                      <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
-                        <svg
-                          className="h-2 w-2 text-green-500"
-                          viewBox="0 0 8 8"
-                          fill="currentColor"
-                          >
-                          <circle cx="4" cy="4" r="3" />
-                        </svg>
-                        <span className="ml-2 text-green-900 text-sm font-medium">Feature Request</span>
-                      </span>
-                          </div>
-                    </div>
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a href="#" className="block p-5 bg-white rounded-md shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="rounded-full h-6 w-6"
-                          src="img\JS.JPG"
-                          alt="JS"
-                        />
-                      </span>
-                    </div>
-                    <div className="flex justify-between items-baseline mt-2">
-                      <div className="text-sm text-gray-600">
-                        <time datetime="2019-09-14">Sep 14</time>    </div>
-                    <div>
-                      <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
-                        <svg
-                          className="h-2 w-2 text-green-500"
-                          viewBox="0 0 8 8"
-                          fill="currentColor"
-                          >
-                          <circle cx="4" cy="4" r="3" />
-                        </svg>
-                        <span className="ml-2 text-green-900 text-sm font-medium">Feature Request</span>
-                      </span>
-                          </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
+          <main className="p-3 inline-flex h-full overflow-hidden">
+            <div className="ml-3 flex-shrink-0 flex flex-col w-80 bg-gray-100 rounded-md">
+              <h3 className="flex-shrink-0 pb-1 pt-3 px-3 text-sm font-medium text-gray-700">
+                Backlog
+              </h3>
+              <div className="flex-1 min-h-0 overflow-y-auto">
+                <ul className="pt-1 pb-3 px-3">
+                  <li>
+                    <a
+                      href="#"
+                      className="block p-5 bg-white rounded-md shadow"
+                    >
+                      <div className="flex justify-between">
+                        <p className="text-sm font-medium text-gray-900 leading-snug">
+                          Add discount code to checkout page
+                        </p>
+                        <span>
+                          <img
+                            className="rounded-full h-6 w-6"
+                            src="img\JS.JPG"
+                            alt="JS"
+                          />
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-baseline mt-2">
+                        <div className="text-sm text-gray-600">
+                          <time datetime="2019-09-14">Sep 14</time>{" "}
+                        </div>
+                        <div>
+                          <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
+                            <svg
+                              className="h-2 w-2 text-green-500"
+                              viewBox="0 0 8 8"
+                              fill="currentColor"
+                            >
+                              <circle cx="4" cy="4" r="3" />
+                            </svg>
+                            <span className="ml-2 text-green-900 text-sm font-medium">
+                              Feature Request
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li className="mt-3">
+                    <a
+                      href="#"
+                      className="block p-5 bg-white rounded-md shadow"
+                    >
+                      <div className="flex justify-between">
+                        <p className="text-sm font-medium text-gray-900 leading-snug">
+                          Add discount code to checkout page
+                        </p>
+                        <span>
+                          <img
+                            className="rounded-full h-6 w-6"
+                            src="img\JS.JPG"
+                            alt="JS"
+                          />
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-baseline mt-2">
+                        <div className="text-sm text-gray-600">
+                          <time datetime="2019-09-14">Sep 14</time>{" "}
+                        </div>
+                        <div>
+                          <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
+                            <svg
+                              className="h-2 w-2 text-green-500"
+                              viewBox="0 0 8 8"
+                              fill="currentColor"
+                            >
+                              <circle cx="4" cy="4" r="3" />
+                            </svg>
+                            <span className="ml-2 text-green-900 text-sm font-medium">
+                              Feature Request
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li className="mt-3">
+                    <a
+                      href="#"
+                      className="block p-5 bg-white rounded-md shadow"
+                    >
+                      <div className="flex justify-between">
+                        <p className="text-sm font-medium text-gray-900 leading-snug">
+                          Add discount code to checkout page
+                        </p>
+                        <span>
+                          <img
+                            className="rounded-full h-6 w-6"
+                            src="img\JS.JPG"
+                            alt="JS"
+                          />
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-baseline mt-2">
+                        <div className="text-sm text-gray-600">
+                          <time datetime="2019-09-14">Sep 14</time>{" "}
+                        </div>
+                        <div>
+                          <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
+                            <svg
+                              className="h-2 w-2 text-green-500"
+                              viewBox="0 0 8 8"
+                              fill="currentColor"
+                            >
+                              <circle cx="4" cy="4" r="3" />
+                            </svg>
+                            <span className="ml-2 text-green-900 text-sm font-medium">
+                              Feature Request
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div className="ml-3 flex-shrink-0 p-3 w-80 bg-gray-100 rounded-md">
-              <h3 className="text-sm font-medium text-gray-900">Backlog</h3>
-              <ul className="mt-2">
-                <li>
-                  <a href="#" className="block p-5 bg-white rounded-md shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="rounded-full h-6 w-6"
-                          src="img\JS.JPG"
-                          alt="JS"
-                        />
-                      </span>
-                    </div>
-                    <div className="flex justify-between items-baseline mt-2">
-                      <div className="text-sm text-gray-600">
-                        <time datetime="2019-09-14">Sep 14</time>    </div>
-                    <div>
-                      <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
-                        <svg
-                          className="h-2 w-2 text-green-500"
-                          viewBox="0 0 8 8"
-                          fill="currentColor"
-                          >
-                          <circle cx="4" cy="4" r="3" />
-                        </svg>
-                        <span className="ml-2 text-green-900 text-sm font-medium">Feature Request</span>
-                      </span>
-                          </div>
-                    </div>
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a href="#" className="block p-5 bg-white rounded-md shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="rounded-full h-6 w-6"
-                          src="img\JS.JPG"
-                          alt="JS"
-                        />
-                      </span>
-                    </div>
-                    <div className="flex justify-between items-baseline mt-2">
-                      <div className="text-sm text-gray-600">
-                        <time datetime="2019-09-14">Sep 14</time>    </div>
-                    <div>
-                      <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
-                        <svg
-                          className="h-2 w-2 text-green-500"
-                          viewBox="0 0 8 8"
-                          fill="currentColor"
-                          >
-                          <circle cx="4" cy="4" r="3" />
-                        </svg>
-                        <span className="ml-2 text-green-900 text-sm font-medium">Feature Request</span>
-                      </span>
-                          </div>
-                    </div>
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a href="#" className="block p-5 bg-white rounded-md shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="rounded-full h-6 w-6"
-                          src="img\JS.JPG"
-                          alt="JS"
-                        />
-                      </span>
-                    </div>
-                    <div className="flex justify-between items-baseline mt-2">
-                      <div className="text-sm text-gray-600">
-                        <time datetime="2019-09-14">Sep 14</time>    </div>
-                    <div>
-                      <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
-                        <svg
-                          className="h-2 w-2 text-green-500"
-                          viewBox="0 0 8 8"
-                          fill="currentColor"
-                          >
-                          <circle cx="4" cy="4" r="3" />
-                        </svg>
-                        <span className="ml-2 text-green-900 text-sm font-medium">Feature Request</span>
-                      </span>
-                          </div>
-                    </div>
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a href="#" className="block p-5 bg-white rounded-md shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="rounded-full h-6 w-6"
-                          src="img\JS.JPG"
-                          alt="JS"
-                        />
-                      </span>
-                    </div>
-                    <div className="flex justify-between items-baseline mt-2">
-                      <div className="text-sm text-gray-600">
-                        <time datetime="2019-09-14">Sep 14</time>    </div>
-                    <div>
-                      <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
-                        <svg
-                          className="h-2 w-2 text-green-500"
-                          viewBox="0 0 8 8"
-                          fill="currentColor"
-                          >
-                          <circle cx="4" cy="4" r="3" />
-                        </svg>
-                        <span className="ml-2 text-green-900 text-sm font-medium">Feature Request</span>
-                      </span>
-                          </div>
-                    </div>
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a href="#" className="block p-5 bg-white rounded-md shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="rounded-full h-6 w-6"
-                          src="img\JS.JPG"
-                          alt="JS"
-                        />
-                      </span>
-                    </div>
-                    <div className="flex justify-between items-baseline mt-2">
-                      <div className="text-sm text-gray-600">
-                        <time datetime="2019-09-14">Sep 14</time>    </div>
-                    <div>
-                      <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
-                        <svg
-                          className="h-2 w-2 text-green-500"
-                          viewBox="0 0 8 8"
-                          fill="currentColor"
-                          >
-                          <circle cx="4" cy="4" r="3" />
-                        </svg>
-                        <span className="ml-2 text-green-900 text-sm font-medium">Feature Request</span>
-                      </span>
-                          </div>
-                    </div>
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a href="#" className="block p-5 bg-white rounded-md shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="rounded-full h-6 w-6"
-                          src="img\JS.JPG"
-                          alt="JS"
-                        />
-                      </span>
-                    </div>
-                    <div className="flex justify-between items-baseline mt-2">
-                      <div className="text-sm text-gray-600">
-                        <time datetime="2019-09-14">Sep 14</time>    </div>
-                    <div>
-                      <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
-                        <svg
-                          className="h-2 w-2 text-green-500"
-                          viewBox="0 0 8 8"
-                          fill="currentColor"
-                          >
-                          <circle cx="4" cy="4" r="3" />
-                        </svg>
-                        <span className="ml-2 text-green-900 text-sm font-medium">Feature Request</span>
-                      </span>
-                          </div>
-                    </div>
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a href="#" className="block p-5 bg-white rounded-md shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="rounded-full h-6 w-6"
-                          src="img\JS.JPG"
-                          alt="JS"
-                        />
-                      </span>
-                    </div>
-                    <div className="flex justify-between items-baseline mt-2">
-                      <div className="text-sm text-gray-600">
-                        <time datetime="2019-09-14">Sep 14</time>    </div>
-                    <div>
-                      <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
-                        <svg
-                          className="h-2 w-2 text-green-500"
-                          viewBox="0 0 8 8"
-                          fill="currentColor"
-                          >
-                          <circle cx="4" cy="4" r="3" />
-                        </svg>
-                        <span className="ml-2 text-green-900 text-sm font-medium">Feature Request</span>
-                      </span>
-                          </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
+            <div className="ml-3 flex-shrink-0 flex flex-col w-80 bg-gray-100 rounded-md">
+              <h3 className="flex-shrink-0 pb-1 pt-3 px-3 text-sm font-medium text-gray-700">
+                Backlog
+              </h3>
+              <div className="flex-1 min-h-0 overflow-y-auto">
+                <ul className="pt-1 pb-3 px-3">
+                  <li>
+                    <a
+                      href="#"
+                      className="block p-5 bg-white rounded-md shadow"
+                    >
+                      <div className="flex justify-between">
+                        <p className="text-sm font-medium text-gray-900 leading-snug">
+                          Add discount code to checkout page
+                        </p>
+                        <span>
+                          <img
+                            className="rounded-full h-6 w-6"
+                            src="img\JS.JPG"
+                            alt="JS"
+                          />
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-baseline mt-2">
+                        <div className="text-sm text-gray-600">
+                          <time datetime="2019-09-14">Sep 14</time>{" "}
+                        </div>
+                        <div>
+                          <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
+                            <svg
+                              className="h-2 w-2 text-green-500"
+                              viewBox="0 0 8 8"
+                              fill="currentColor"
+                            >
+                              <circle cx="4" cy="4" r="3" />
+                            </svg>
+                            <span className="ml-2 text-green-900 text-sm font-medium">
+                              Feature Request
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li className="mt-3">
+                    <a
+                      href="#"
+                      className="block p-5 bg-white rounded-md shadow"
+                    >
+                      <div className="flex justify-between">
+                        <p className="text-sm font-medium text-gray-900 leading-snug">
+                          Add discount code to checkout page
+                        </p>
+                        <span>
+                          <img
+                            className="rounded-full h-6 w-6"
+                            src="img\JS.JPG"
+                            alt="JS"
+                          />
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-baseline mt-2">
+                        <div className="text-sm text-gray-600">
+                          <time datetime="2019-09-14">Sep 14</time>{" "}
+                        </div>
+                        <div>
+                          <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
+                            <svg
+                              className="h-2 w-2 text-green-500"
+                              viewBox="0 0 8 8"
+                              fill="currentColor"
+                            >
+                              <circle cx="4" cy="4" r="3" />
+                            </svg>
+                            <span className="ml-2 text-green-900 text-sm font-medium">
+                              Feature Request
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li className="mt-3">
+                    <a
+                      href="#"
+                      className="block p-5 bg-white rounded-md shadow"
+                    >
+                      <div className="flex justify-between">
+                        <p className="text-sm font-medium text-gray-900 leading-snug">
+                          Add discount code to checkout page
+                        </p>
+                        <span>
+                          <img
+                            className="rounded-full h-6 w-6"
+                            src="img\JS.JPG"
+                            alt="JS"
+                          />
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-baseline mt-2">
+                        <div className="text-sm text-gray-600">
+                          <time datetime="2019-09-14">Sep 14</time>{" "}
+                        </div>
+                        <div>
+                          <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
+                            <svg
+                              className="h-2 w-2 text-green-500"
+                              viewBox="0 0 8 8"
+                              fill="currentColor"
+                            >
+                              <circle cx="4" cy="4" r="3" />
+                            </svg>
+                            <span className="ml-2 text-green-900 text-sm font-medium">
+                              Feature Request
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li className="mt-3">
+                    <a
+                      href="#"
+                      className="block p-5 bg-white rounded-md shadow"
+                    >
+                      <div className="flex justify-between">
+                        <p className="text-sm font-medium text-gray-900 leading-snug">
+                          Add discount code to checkout page
+                        </p>
+                        <span>
+                          <img
+                            className="rounded-full h-6 w-6"
+                            src="img\JS.JPG"
+                            alt="JS"
+                          />
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-baseline mt-2">
+                        <div className="text-sm text-gray-600">
+                          <time datetime="2019-09-14">Sep 14</time>{" "}
+                        </div>
+                        <div>
+                          <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
+                            <svg
+                              className="h-2 w-2 text-green-500"
+                              viewBox="0 0 8 8"
+                              fill="currentColor"
+                            >
+                              <circle cx="4" cy="4" r="3" />
+                            </svg>
+                            <span className="ml-2 text-green-900 text-sm font-medium">
+                              Feature Request
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li className="mt-3">
+                    <a
+                      href="#"
+                      className="block p-5 bg-white rounded-md shadow"
+                    >
+                      <div className="flex justify-between">
+                        <p className="text-sm font-medium text-gray-900 leading-snug">
+                          Add discount code to checkout page
+                        </p>
+                        <span>
+                          <img
+                            className="rounded-full h-6 w-6"
+                            src="img\JS.JPG"
+                            alt="JS"
+                          />
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-baseline mt-2">
+                        <div className="text-sm text-gray-600">
+                          <time datetime="2019-09-14">Sep 14</time>{" "}
+                        </div>
+                        <div>
+                          <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
+                            <svg
+                              className="h-2 w-2 text-green-500"
+                              viewBox="0 0 8 8"
+                              fill="currentColor"
+                            >
+                              <circle cx="4" cy="4" r="3" />
+                            </svg>
+                            <span className="ml-2 text-green-900 text-sm font-medium">
+                              Feature Request
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li className="mt-3">
+                    <a
+                      href="#"
+                      className="block p-5 bg-white rounded-md shadow"
+                    >
+                      <div className="flex justify-between">
+                        <p className="text-sm font-medium text-gray-900 leading-snug">
+                          Add discount code to checkout page
+                        </p>
+                        <span>
+                          <img
+                            className="rounded-full h-6 w-6"
+                            src="img\JS.JPG"
+                            alt="JS"
+                          />
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-baseline mt-2">
+                        <div className="text-sm text-gray-600">
+                          <time datetime="2019-09-14">Sep 14</time>{" "}
+                        </div>
+                        <div>
+                          <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
+                            <svg
+                              className="h-2 w-2 text-green-500"
+                              viewBox="0 0 8 8"
+                              fill="currentColor"
+                            >
+                              <circle cx="4" cy="4" r="3" />
+                            </svg>
+                            <span className="ml-2 text-green-900 text-sm font-medium">
+                              Feature Request
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div className="ml-3 flex-shrink-0 p-3 w-80 bg-gray-100 rounded-md">
-              <h3 className="text-sm font-medium text-gray-900">Backlog</h3>
-              <ul className="mt-2">
-                <li>
-                  <a href="#" className="block p-5 bg-white rounded-md shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="rounded-full h-6 w-6"
-                          src="img\JS.JPG"
-                          alt="JS"
-                        />
-                      </span>
-                    </div>
-                    <div className="flex justify-between items-baseline mt-2">
-                      <div className="text-sm text-gray-600">
-                        <time datetime="2019-09-14">Sep 14</time>    </div>
-                    <div>
-                      <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
-                        <svg
-                          className="h-2 w-2 text-green-500"
-                          viewBox="0 0 8 8"
-                          fill="currentColor"
-                          >
-                          <circle cx="4" cy="4" r="3" />
-                        </svg>
-                        <span className="ml-2 text-green-900 text-sm font-medium">Feature Request</span>
-                      </span>
-                          </div>
-                    </div>
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a href="#" className="block p-5 bg-white rounded-md shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="rounded-full h-6 w-6"
-                          src="img\JS.JPG"
-                          alt="JS"
-                        />
-                      </span>
-                    </div>
-                    <div className="flex justify-between items-baseline mt-2">
-                      <div className="text-sm text-gray-600">
-                        <time datetime="2019-09-14">Sep 14</time>    </div>
-                    <div>
-                      <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
-                        <svg
-                          className="h-2 w-2 text-green-500"
-                          viewBox="0 0 8 8"
-                          fill="currentColor"
-                          >
-                          <circle cx="4" cy="4" r="3" />
-                        </svg>
-                        <span className="ml-2 text-green-900 text-sm font-medium">Feature Request</span>
-                      </span>
-                          </div>
-                    </div>
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a href="#" className="block p-5 bg-white rounded-md shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="rounded-full h-6 w-6"
-                          src="img\JS.JPG"
-                          alt="JS"
-                        />
-                      </span>
-                    </div>
-                    <div className="flex justify-between items-baseline mt-2">
-                      <div className="text-sm text-gray-600">
-                        <time datetime="2019-09-14">Sep 14</time>    </div>
-                    <div>
-                      <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
-                        <svg
-                          className="h-2 w-2 text-green-500"
-                          viewBox="0 0 8 8"
-                          fill="currentColor"
-                          >
-                          <circle cx="4" cy="4" r="3" />
-                        </svg>
-                        <span className="ml-2 text-green-900 text-sm font-medium">Feature Request</span>
-                      </span>
-                          </div>
-                    </div>
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a href="#" className="block p-5 bg-white rounded-md shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="rounded-full h-6 w-6"
-                          src="img\JS.JPG"
-                          alt="JS"
-                        />
-                      </span>
-                    </div>
-                    <div className="flex justify-between items-baseline mt-2">
-                      <div className="text-sm text-gray-600">
-                        <time datetime="2019-09-14">Sep 14</time>    </div>
-                    <div>
-                      <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
-                        <svg
-                          className="h-2 w-2 text-green-500"
-                          viewBox="0 0 8 8"
-                          fill="currentColor"
-                          >
-                          <circle cx="4" cy="4" r="3" />
-                        </svg>
-                        <span className="ml-2 text-green-900 text-sm font-medium">Feature Request</span>
-                      </span>
-                          </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
+            <div className="ml-3 flex-shrink-0 flex flex-col w-80 bg-gray-100 rounded-md">
+              <h3 className="flex-shrink-0 pb-1 pt-3 px-3 text-sm font-medium text-gray-700">
+                Backlog
+              </h3>
+              <div className="flex-1 min-h-0 overflow-y-auto">
+                <ul className="pt-1 pb-3 px-3">
+                  <li>
+                    <a
+                      href="#"
+                      className="block p-5 bg-white rounded-md shadow"
+                    >
+                      <div className="flex justify-between">
+                        <p className="text-sm font-medium text-gray-900 leading-snug">
+                          Add discount code to checkout page
+                        </p>
+                        <span>
+                          <img
+                            className="rounded-full h-6 w-6"
+                            src="img\JS.JPG"
+                            alt="JS"
+                          />
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-baseline mt-2">
+                        <div className="text-sm text-gray-600">
+                          <time datetime="2019-09-14">Sep 14</time>{" "}
+                        </div>
+                        <div>
+                          <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
+                            <svg
+                              className="h-2 w-2 text-green-500"
+                              viewBox="0 0 8 8"
+                              fill="currentColor"
+                            >
+                              <circle cx="4" cy="4" r="3" />
+                            </svg>
+                            <span className="ml-2 text-green-900 text-sm font-medium">
+                              Feature Request
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li className="mt-3">
+                    <a
+                      href="#"
+                      className="block p-5 bg-white rounded-md shadow"
+                    >
+                      <div className="flex justify-between">
+                        <p className="text-sm font-medium text-gray-900 leading-snug">
+                          Add discount code to checkout page
+                        </p>
+                        <span>
+                          <img
+                            className="rounded-full h-6 w-6"
+                            src="img\JS.JPG"
+                            alt="JS"
+                          />
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-baseline mt-2">
+                        <div className="text-sm text-gray-600">
+                          <time datetime="2019-09-14">Sep 14</time>{" "}
+                        </div>
+                        <div>
+                          <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
+                            <svg
+                              className="h-2 w-2 text-green-500"
+                              viewBox="0 0 8 8"
+                              fill="currentColor"
+                            >
+                              <circle cx="4" cy="4" r="3" />
+                            </svg>
+                            <span className="ml-2 text-green-900 text-sm font-medium">
+                              Feature Request
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li className="mt-3">
+                    <a
+                      href="#"
+                      className="block p-5 bg-white rounded-md shadow"
+                    >
+                      <div className="flex justify-between">
+                        <p className="text-sm font-medium text-gray-900 leading-snug">
+                          Add discount code to checkout page
+                        </p>
+                        <span>
+                          <img
+                            className="rounded-full h-6 w-6"
+                            src="img\JS.JPG"
+                            alt="JS"
+                          />
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-baseline mt-2">
+                        <div className="text-sm text-gray-600">
+                          <time datetime="2019-09-14">Sep 14</time>{" "}
+                        </div>
+                        <div>
+                          <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
+                            <svg
+                              className="h-2 w-2 text-green-500"
+                              viewBox="0 0 8 8"
+                              fill="currentColor"
+                            >
+                              <circle cx="4" cy="4" r="3" />
+                            </svg>
+                            <span className="ml-2 text-green-900 text-sm font-medium">
+                              Feature Request
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li className="mt-3">
+                    <a
+                      href="#"
+                      className="block p-5 bg-white rounded-md shadow"
+                    >
+                      <div className="flex justify-between">
+                        <p className="text-sm font-medium text-gray-900 leading-snug">
+                          Add discount code to checkout page
+                        </p>
+                        <span>
+                          <img
+                            className="rounded-full h-6 w-6"
+                            src="img\JS.JPG"
+                            alt="JS"
+                          />
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-baseline mt-2">
+                        <div className="text-sm text-gray-600">
+                          <time datetime="2019-09-14">Sep 14</time>{" "}
+                        </div>
+                        <div>
+                          <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
+                            <svg
+                              className="h-2 w-2 text-green-500"
+                              viewBox="0 0 8 8"
+                              fill="currentColor"
+                            >
+                              <circle cx="4" cy="4" r="3" />
+                            </svg>
+                            <span className="ml-2 text-green-900 text-sm font-medium">
+                              Feature Request
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div className="ml-3 flex-shrink-0 p-3 w-80 bg-gray-100 rounded-md">
-              <h3 className="text-sm font-medium text-gray-900">Backlog</h3>
-              <ul className="mt-2">
-                <li>
-                  <a href="#" className="block p-5 bg-white rounded-md shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="rounded-full h-6 w-6"
-                          src="img\JS.JPG"
-                          alt="JS"
-                        />
-                      </span>
-                    </div>
-                    <div className="flex justify-between items-baseline mt-2">
-                      <div className="text-sm text-gray-600">
-                        <time datetime="2019-09-14">Sep 14</time>    </div>
-                    <div>
-                      <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
-                        <svg
-                          className="h-2 w-2 text-green-500"
-                          viewBox="0 0 8 8"
-                          fill="currentColor"
-                          >
-                          <circle cx="4" cy="4" r="3" />
-                        </svg>
-                        <span className="ml-2 text-green-900 text-sm font-medium">Feature Request</span>
-                      </span>
-                          </div>
-                    </div>
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a href="#" className="block p-5 bg-white rounded-md shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="rounded-full h-6 w-6"
-                          src="img\JS.JPG"
-                          alt="JS"
-                        />
-                      </span>
-                    </div>
-                    <div className="flex justify-between items-baseline mt-2">
-                      <div className="text-sm text-gray-600">
-                        <time datetime="2019-09-14">Sep 14</time>    </div>
-                    <div>
-                      <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
-                        <svg
-                          className="h-2 w-2 text-green-500"
-                          viewBox="0 0 8 8"
-                          fill="currentColor"
-                          >
-                          <circle cx="4" cy="4" r="3" />
-                        </svg>
-                        <span className="ml-2 text-green-900 text-sm font-medium">Feature Request</span>
-                      </span>
-                          </div>
-                    </div>
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a href="#" className="block p-5 bg-white rounded-md shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="rounded-full h-6 w-6"
-                          src="img\JS.JPG"
-                          alt="JS"
-                        />
-                      </span>
-                    </div>
-                    <div className="flex justify-between items-baseline mt-2">
-                      <div className="text-sm text-gray-600">
-                        <time datetime="2019-09-14">Sep 14</time>    </div>
-                    <div>
-                      <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
-                        <svg
-                          className="h-2 w-2 text-green-500"
-                          viewBox="0 0 8 8"
-                          fill="currentColor"
-                          >
-                          <circle cx="4" cy="4" r="3" />
-                        </svg>
-                        <span className="ml-2 text-green-900 text-sm font-medium">Feature Request</span>
-                      </span>
-                          </div>
-                    </div>
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a href="#" className="block p-5 bg-white rounded-md shadow">
-                    <div className="flex justify-between">
-                      <p className="text-sm font-medium text-gray-900 leading-snug">
-                        Add discount code to checkout page
-                      </p>
-                      <span>
-                        <img
-                          className="rounded-full h-6 w-6"
-                          src="img\JS.JPG"
-                          alt="JS"
-                        />
-                      </span>
-                    </div>
-                    <div className="flex justify-between items-baseline mt-2">
-                      <div className="text-sm text-gray-600">
-                        <time datetime="2019-09-14">Sep 14</time>    </div>
-                    <div>
-                      <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
-                        <svg
-                          className="h-2 w-2 text-green-500"
-                          viewBox="0 0 8 8"
-                          fill="currentColor"
-                          >
-                          <circle cx="4" cy="4" r="3" />
-                        </svg>
-                        <span className="ml-2 text-green-900 text-sm font-medium">Feature Request</span>
-                      </span>
-                          </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
+            <div className="ml-3 flex-shrink-0 flex flex-col w-80 bg-gray-100 rounded-md">
+              <h3 className="flex-shrink-0 pb-1 pt-3 px-3 text-sm font-medium text-gray-700">
+                Backlog
+              </h3>
+              <div className="flex-1 min-h-0 overflow-y-auto">
+                <ul className="pt-1 pb-3 px-3">
+                  <li>
+                    <a
+                      href="#"
+                      className="block p-5 bg-white rounded-md shadow"
+                    >
+                      <div className="flex justify-between">
+                        <p className="text-sm font-medium text-gray-900 leading-snug">
+                          Add discount code to checkout page
+                        </p>
+                        <span>
+                          <img
+                            className="rounded-full h-6 w-6"
+                            src="img\JS.JPG"
+                            alt="JS"
+                          />
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-baseline mt-2">
+                        <div className="text-sm text-gray-600">
+                          <time datetime="2019-09-14">Sep 14</time>{" "}
+                        </div>
+                        <div>
+                          <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
+                            <svg
+                              className="h-2 w-2 text-green-500"
+                              viewBox="0 0 8 8"
+                              fill="currentColor"
+                            >
+                              <circle cx="4" cy="4" r="3" />
+                            </svg>
+                            <span className="ml-2 text-green-900 text-sm font-medium">
+                              Feature Request
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li className="mt-3">
+                    <a
+                      href="#"
+                      className="block p-5 bg-white rounded-md shadow"
+                    >
+                      <div className="flex justify-between">
+                        <p className="text-sm font-medium text-gray-900 leading-snug">
+                          Add discount code to checkout page
+                        </p>
+                        <span>
+                          <img
+                            className="rounded-full h-6 w-6"
+                            src="img\JS.JPG"
+                            alt="JS"
+                          />
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-baseline mt-2">
+                        <div className="text-sm text-gray-600">
+                          <time datetime="2019-09-14">Sep 14</time>{" "}
+                        </div>
+                        <div>
+                          <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
+                            <svg
+                              className="h-2 w-2 text-green-500"
+                              viewBox="0 0 8 8"
+                              fill="currentColor"
+                            >
+                              <circle cx="4" cy="4" r="3" />
+                            </svg>
+                            <span className="ml-2 text-green-900 text-sm font-medium">
+                              Feature Request
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li className="mt-3">
+                    <a
+                      href="#"
+                      className="block p-5 bg-white rounded-md shadow"
+                    >
+                      <div className="flex justify-between">
+                        <p className="text-sm font-medium text-gray-900 leading-snug">
+                          Add discount code to checkout page
+                        </p>
+                        <span>
+                          <img
+                            className="rounded-full h-6 w-6"
+                            src="img\JS.JPG"
+                            alt="JS"
+                          />
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-baseline mt-2">
+                        <div className="text-sm text-gray-600">
+                          <time datetime="2019-09-14">Sep 14</time>{" "}
+                        </div>
+                        <div>
+                          <span class="bg-green-100 px-2 py-1 inline-flex items-center rounded">
+                            <svg
+                              className="h-2 w-2 text-green-500"
+                              viewBox="0 0 8 8"
+                              fill="currentColor"
+                            >
+                              <circle cx="4" cy="4" r="3" />
+                            </svg>
+                            <span className="ml-2 text-green-900 text-sm font-medium">
+                              Feature Request
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </main>
         </div>
