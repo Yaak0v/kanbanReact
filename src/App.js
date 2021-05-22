@@ -11,7 +11,7 @@ import "./App.css";
 function App() {
   return (
     <div className="h-screen flex">
-      <div className="w-64 px-8 py-4 bg-gray-100 border-r">
+      <div className="w-64 px-8 py-4 bg-gray-100 border-r overflow-auto">
         <img className="h-9 w-9" src="img\E.svg" alt="Euclid Logo" />
         <nav className="mt-8">
           <h3 className="px-3 text-xs font-semibold text-gray-600 uppercase tracking-wide">
@@ -106,8 +106,8 @@ function App() {
           </button>
         </nav>
       </div>
-      <div className="flex-1 min-w-0 bg-white">
-        <div className="border-b-2 border-gray-200">
+      <div className="flex-1 min-w-0 flex flex-col bg-white">
+        <div className="flex-shrink-0 border-b-2 border-gray-200">
           <header className="px-6">
             <div className="flex justify-between items-center py-3 border-b border-gray-200">
               <div className="flex-1">
@@ -188,8 +188,8 @@ function App() {
             </div>
           </header>
         </div>
-        <div>
-          <main className="p-3 flex">
+        <div className="flex-1 overflow-auto">
+          <main className="p-3 inline-flex">
             <div className="ml-3 flex-shrink-0 p-3 w-80 bg-gray-100 rounded-md">
               <h3 className="text-sm font-medium text-gray-900">Backlog</h3>
               <ul className="mt-2">
