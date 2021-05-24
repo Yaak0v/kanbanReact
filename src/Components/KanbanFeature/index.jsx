@@ -1,5 +1,3 @@
-//this is broken - got stuck trying to pass props down within the dnd context?
-
 import React, { useState } from "react";
 import { MenuIcon, ViewBoardsIcon, PlusIcon } from "@heroicons/react/outline";
 import TopArea from "./TopArea";
@@ -32,6 +30,20 @@ const itemsFromBackend1 = [
     id: uuid(),
     date: "Sep 17",
     action: "Lift some weights",
+    imgSrc: "img/JS.JPG",
+    actionType: "Feature Request",
+  },
+  {
+    id: uuid(),
+    date: "Sep 18",
+    action: "Costa Rica",
+    imgSrc: "img/JS.JPG",
+    actionType: "Feature Request",
+  },
+  {
+    id: uuid(),
+    date: "Sep 19",
+    action: "PRODUCT PRODUCT PRODUCT",
     imgSrc: "img/JS.JPG",
     actionType: "Feature Request",
   },
@@ -106,18 +118,22 @@ function KanbanFeature() {
           <main className="p-3 inline-flex h-full overflow-hidden">
             {Object.entries(columns).map(([id, column]) => {
               return (
-                  <Droppable droppableId={id} key={id}>
-                    {(provided, snapshot) => {
-                      return (
-                        <div
-                          {...provided.droppableProps}
-                          ref={provided.innerRef}
-                          className={`ml-3 flex-shrink-0 flex flex-col w-80 rounded-md ${snapshot.isDraggingOver ? "bg-gray-200" : 'bg-gray-100'}`}
-                        >
-                            <div className="flex-1 min-h-0 overflow-y-auto">
-                              <h3 className="flex-shrink-0 pb-1 pt-3 px-3 text-sm font-medium text-gray-700">
-                                {column.name}
-                              </h3>
+                <Droppable droppableId={id} key={id}>
+                  {(provided, snapshot) => {
+                    return (
+                      <div
+                        {...provided.droppableProps}
+                        ref={provided.innerRef}
+                        className={`ml-3 flex-shrink-0 flex flex-col w-80 rounded-md ${
+                          snapshot.isDraggingOver
+                            ? "bg-gray-200"
+                            : "bg-gray-100"
+                        }`}
+                      >
+                        <div className="flex-1 min-h-0 overflow-y-auto">
+                          <h3 className="flex-shrink-0 pb-1 pt-3 px-3 text-sm font-medium text-gray-700">
+                            {column.name}
+                          </h3>
                           <div className="pt-1 pb-3 px-3">
                             {column.items.map((item, index) => {
                               return (
@@ -178,10 +194,10 @@ function KanbanFeature() {
                             })}
                           </div>
                         </div>
-                    </div>
-                      );
-                    }}
-                  </Droppable>
+                      </div>
+                    );
+                  }}
+                </Droppable>
               );
             })}
           </main>
