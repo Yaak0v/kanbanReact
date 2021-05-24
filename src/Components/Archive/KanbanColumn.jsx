@@ -1,6 +1,6 @@
 import React from "react";
-import KanbanCard from "./KanbanCard";
-import KanbanCardMulti from "./KanbanCard";
+import KanbanCard from "../KanbanFeature/KanbanCard";
+import KanbanCardMulti from "../KanbanFeature/KanbanCard";
 
 const cardInfo = [
   {
